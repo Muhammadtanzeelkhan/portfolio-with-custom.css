@@ -1,0 +1,50 @@
+.hero {
+  min-height: 100vh; /* Full-screen height */
+  background: url('/banner_bg.png') no-repeat center center; /* Default background */
+  background-size: 25%; /* Initial scaling of the background */
+  background-position: left 100px top 100px; /* Adjust the position */
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column by default */
+  height: calc(100vh - 60px); /* Adjust for the navbar height */
+}
+
+@media (min-width: 1024px) { /* For larger screens */
+  .hero-container {
+    grid-template-columns: 1fr 1fr; /* Two-column layout */
+  }
+}
+
+.hero-text {
+  font-size: 50px; /* Base font size */
+  font-weight: bold;
+  line-height: 1.25; /* Equivalent to "leading-tight" */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 640px) { /* For small screens and up */
+  .hero-text {
+    font-size: 70px;
+  }
+}
+
+.text-line {
+  animation: fadeInUp 1s ease-in-out; /* Adding animation */
+}
+
+/* Optional: Define a fade-in-up animation */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

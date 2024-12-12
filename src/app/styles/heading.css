@@ -1,0 +1,14 @@
+.heading {
+    text-align: center;
+    font-size: 2.25rem; /* Equivalent to text-4xl */
+    padding-bottom: 2rem; /* Equivalent to pb-8 */
+    font-weight: bold; /* Ensures the heading stands out */
+  }
+  
+  .heading-line {
+    display: inline-block;
+    border-bottom: 4px solid var(--accent-color); /* Add accent color */
+    padding-bottom: 0.5rem; /* Equivalent to pb-2 */
+    font-weight: 500; /* Medium font weight for the title */
+  }
+  

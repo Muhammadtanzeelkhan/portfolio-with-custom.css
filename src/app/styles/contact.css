@@ -1,0 +1,67 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .pt-32 {
+    padding-top: 8rem;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 2.5rem; /* Equivalent to gap-10 */
+  }
+  
+  .space-y-8 > * + * {
+    margin-top: 2rem; /* Equivalent to space-y-8 */
+  }
+  
+  .text-5xl {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .text-gray-600 {
+    color: #718096;
+  }
+  
+  
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .gap-3 > * + * {
+    margin-left: 0.75rem; /* Equivalent to gap-3 */
+  }
+  
+  .input {
+    height: 40px;
+    background: transparent;
+    border: 1px solid var(--accent-color);
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .textarea {
+    background: transparent;
+    border: 1px solid var(--accent-color);
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .button {
+    background-color: #27272a; /* Equivalent to bg-zinc-900 */
+    color: var(--accent-color);
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+  }
+  

@@ -1,0 +1,15 @@
+.footer {
+    margin-top: 4rem; /* Equivalent to mt-16 */
+    padding: 1.25rem 0; /* Equivalent to py-5 */
+    text-align: center;
+    background-color: #3f3f46; /* Equivalent to bg-neutral-700 */
+    color: #fff; /* Text color for better visibility */
+    font-size: 0.875rem; /* Slightly smaller font size */
+    font-weight: 500; /* Medium font weight */
+  }
+  
+  .footer span {
+    font-weight: 700; /* Bold the copyright holder's name */
+    color: var(--accent-color); /* Optional: Accent color for name */
+  }
+  

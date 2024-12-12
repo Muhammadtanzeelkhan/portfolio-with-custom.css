@@ -1,0 +1,59 @@
+/* Tailwind CSS styles for the Projects component */
+
+/* General container spacing */
+.pt-32container {
+    @apply pt-32 container mx-auto px-4;
+  }
+  
+  /* Card grid layout */
+  .grid {
+    @apply grid gap-10 xl:gap-x-10 xl:gap-y-10;
+  }
+  
+  /* Card styles */
+  .border {
+    @apply rounded-lg shadow-lg overflow-hidden;
+  }
+  
+  /* Card hover effect */
+  .border:hover {
+    @apply transform scale-105 transition duration-300 ease-in-out;
+  }
+  
+  /* Card image styles */
+  img {
+    @apply w-full h-auto object-cover rounded-t-lg;
+  }
+  
+  /* Card content */
+  .p-4 {
+    @apply bg-white rounded-b-lg;
+  }
+  
+  /* Card title */
+  .text-4xl {
+    @apply font-semibold text-gray-800 mb-2;
+  }
+  
+  /* Card description */
+  .desc {
+    @apply text-sm text-gray-600;
+  }
+  
+  /* Card tags */
+  .tags {
+    @apply inline-block px-2 py-1 mr-2 text-xs font-medium text-white bg-accent rounded-md;
+  }
+  
+  /* Tags hover effect */
+  .tags:hover {
+    @apply bg-accent-light;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .grid {
+      @apply gap-6 grid-cols-1;
+    }
+  }
+  
